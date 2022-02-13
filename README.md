@@ -30,49 +30,11 @@ LIFT = SUPPORT(A,B)/(SUPPORT(A))*SUPPORT(B))
 
 Given a set of transactions, we can find rules that will predict the occurrence of an item based on the occurrences of other items in the transaction.
 
-Support = 50%; Confidence = 75%
+![Capture0](https://user-images.githubusercontent.com/95124698/153754238-262c4e3f-d12f-4aeb-840d-5af7dd8aacf5.PNG)
 
-TRANSACTION         ITEMS PURCHASED
-T1                  BREAD,CHEESE,EGG,JUICE
-T2                  BREAD,CHEESE,JUICE
-T3                  BREAD,MILK,YOGURT
-T4                  BREAD,JUICE,MILK
-T5                  CHEESE,JUICE,MILK
+![Capture](https://user-images.githubusercontent.com/95124698/153754258-eaa31c2f-33ea-477b-a128-634293ef5519.PNG)
 
-Given min_support = 50%
-SUPPORT=FREQUENCY/#TRANSACTIONS
-
-ITEMS               FREQUENCY            Frequency Item Set
-BREAD                   4                    ⅘=80%
-CHEESE                  3                    ⅗=60%
-EGG                     1                    ⅕=20%
-JUICE                   4                    ⅘=80%
-MILK                    3                    ⅗=60%
-YOGURT                  1                    ⅕=20%
-
-Making two items candidate set:
-
-ITEM PAIRS
-FREQUENCY
-SUPPORT=FREQ/#TRANSACTIONS
-BREAD,CHEESE
-2
-⅖=40%
-BREAD,JUICE
-3
-⅗=60%
-BREAD,MILK
-2
-⅖=40%
-CHEESE,JUICE
-3
-⅗=60%
-CHEESE,MILK
-1
-⅕=20%
-JUICE,MILK
-2
-⅖=40%
+![Capture2](https://user-images.githubusercontent.com/95124698/153754262-eea59eef-0c45-4124-b8d0-51c167133168.PNG)
 
 FOR RULES::
 1.BREAD,JUICE
